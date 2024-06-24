@@ -25,6 +25,7 @@ export default function Users() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
   const [activePage, setActivePage] = useState(1);
+  const [avtiveUser, setUserActive] = useState(null);
   const pages = Math.ceil(filteredUsers.length / perPageCount);
 
   useEffect(() => {
@@ -149,7 +150,7 @@ export default function Users() {
                       className="button"
                       onClick={() => handleChatButtonClick(user)}
                     >
-                      Chats
+                      Chat
                     </Button>
                   </TableCell>
                 </TableRow>
