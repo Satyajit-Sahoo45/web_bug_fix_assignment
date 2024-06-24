@@ -44,7 +44,7 @@ router.post("/register", async (req, res) => {
   });
   if (!isAlreadyActive) {
     const active_user = new ActiveUser({
-      username: req.body.username,
+      activeUsers: [{ username: req.body.username }],
     });
     await active_user.save();
   }
