@@ -1,0 +1,63 @@
+.tableContainer {
+  margin: auto;
+}
+
+.table {
+  background-color: #333;
+}
+
+.tableHeadCell {
+  color: white !important;
+  font-family: "McLaren" !important;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+}
+
+.tableBodyCell {
+  color: white !important;
+  font-family: "McLaren" !important;
+  font-size: 16px !important;
+}
+
+.tableRow {
+  &:nth-of-type(even) {
+    background-color: #555; /* Alternate row background color */
+  }
+}
+
+.tableBodyCell .button {
+  width: 170px;
+  font-size: 16px !important;
+  font-family: "McLaren" !important;
+}
+
+.user-blur-container {
+  filter: blur(5px);
+}
+
+.pagination-container{
+  margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.table .online{
+  margin-right: 20px;
+    color: black;
+    background-color: green;
+    border-radius: 64px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
+
+
+.table .offline{
+  margin-right: 20px;
+    color: black;
+    background-color: red;
+    border-radius: 64px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
